@@ -113,3 +113,24 @@ $(".user2roll").click(function(event){
   $(".diceRoll2").text(player2.diceRoll);
   $(".turnScore2").text(player2.turnScore);
 });
+$(".user1hold").click(function(event){
+  event.preventDefault();
+  player1.active = false
+  player2.active = true;
+  player1.hold();
+  $(".totalScore1").text(player1.totalScore1);
+  player1.diceRoll=0;
+  player1.turnScore = 0;
+  $(".diceRoll1").text(player1.diceRoll);
+  $(".turnScore1").text(player1.turnScore);
+});
+$(".user2hold").click(function(event){
+  event.preventDefault();
+  player2.active = false
+  player1.active = true;
+  player2.hold();
+  $(".totalScore2").text(player2.totalScore2);
+  player2.diceRoll=0;
+  player2.turnScore = 0;
+  $(".diceRoll2").text(player2.diceRoll);
+  $(".turnScore2").text(player2.turnScore);
