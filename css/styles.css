@@ -1,10 +1,22 @@
+.playGame{
+  display: none;
+}
+.playingSection{
+  display: none;
+}
+
+
 /* img{
 
   height:40vh;
 } */
-.disableGamingField{
+/* .disableGamingField{
   opacity: 0.3;
 }
 .startNewGame{
   display:none;
 }
+
+.playingSection{
+  display: none;
+} */
