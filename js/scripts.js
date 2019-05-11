@@ -80,4 +80,10 @@ $("#formFields").submit(function(event){
   event.preventDefault();
   $("form").hide();
   $(".startNewGame").show();
+  $(".startNewGame").click(function(){
+    $("form").show();
+    $(".playingSection").hide();
+    $(".startNewGame").hide();
+    resetFields();
+  })
 })
