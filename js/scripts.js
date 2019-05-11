@@ -25,5 +25,36 @@ function activePlayer(){
 //function that dictates what is to happen when the dice is rolled
 
 Player.prototype.roll= function(){
-  
+  var randomNumber= Math.floor((Math.random()* 6)+ 1);
+  this.diceRoll = randomNumber;
+  activePlayer();
+
+  if (randomNumber===1){
+    this.turnScore= 0;
+    this.diceRoll= 1;
+    if(this.active === player1.active) {
+      player1.active = false;
+      player2.active = true;
+      $(".firstPlayer").children().prop("disabled",true);
+      $(".secondPlayer").addClass("disableGamingField");
+      $(".secondPlayer").children().prop("disabled",false);
+      $(".secondPlayer").removeClass("disableGamingField");
+    }
+    else if(this.active===player2.active){
+      player2.active= false;
+      player1.active= true;
+      $(".secondPlayer").children().prop("disabled",true);
+      $(".secondPlayer").addClass("disableGamingField")
+      $(".firstPlayer").children().prop("disabled"false);
+      $(".firstPlayer").removeClass("disableGamingField")
+    }
+    else{
+      console.log("This game is not working");
+    }
+    return alert("Oooop, you got a 1. It is your partner's turn");
+  };
+  else{
+    this.turnScore +=randomNumber;
+  };
+  return this.diceRoll;
 }
