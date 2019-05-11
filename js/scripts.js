@@ -89,4 +89,7 @@ $("#formFields").submit(function(event){
   $("#playingSection").show();
   var user1 = $("#nameplayer1").val();
   var user2 = $("#nameplayer2").val();
+
+  player1 = new Player(user1);
+  player2 = new Player(user2);
 })
