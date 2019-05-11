@@ -85,5 +85,8 @@ $("#formFields").submit(function(event){
     $(".playingSection").hide();
     $(".startNewGame").hide();
     resetFields();
-  })
+  });
+  $("#playingSection").show();
+  var user1 = $("#nameplayer1").val();
+  var user2 = $("#nameplayer2").val();
 })
