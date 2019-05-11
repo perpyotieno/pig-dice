@@ -58,3 +58,21 @@ Player.prototype.roll= function(){
   };
   return this.diceRoll;
 }
+// When a player holds
+Player.prototype.hold() = function () {
+  activePlayer();
+  this.totalScore += this.turnScore;
+  if(this.totalScore >= 100){
+    alert("Game Over. You have won!!!!");
+    resetFields();
+    alert("To play with a new partner click new game.")
+  }
+  else{
+    return false;
+  }
+  console.log("the turn total is: " + this.turnScore);
+  return this.overallScore;
+};
+
+
+// front End logic
