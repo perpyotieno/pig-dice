@@ -97,11 +97,19 @@ $("#formFields").submit(function(event){
   $(".nameofplayer2Output").text(player2.name);
   resetFields();
 });
-$("user1roll").click(function(event){
+$(".user1roll").click(function(event){
   event.preventDefault();
   player1.active = true;
   player2.active = false;
   player1.roll();
   $(".diceRoll1").text(player1.diceRoll);
   $(".turnScore1").text(player1.turnScore);
+});
+$(".user2roll").click(function(event){
+  event.preventDefault();
+  player2.active =true;
+  player1.active = false;
+  player2.roll();
+  $(".diceRoll2").text(player2.diceRoll);
+  $(".turnScore2").text(player2.turnScore);
 });
