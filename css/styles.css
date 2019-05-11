@@ -5,3 +5,6 @@
 .disableGamingField{
   opacity: 0.3;
 }
+.startNewGame{
+  display:none;
+}

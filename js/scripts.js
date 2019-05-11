@@ -76,3 +76,8 @@ Player.prototype.hold() = function () {
 
 
 // front End logic
+$("#formFields").submit(function(event){
+  event.preventDefault();
+  $("form").hide();
+  $(".startNewGame").show();
+})
