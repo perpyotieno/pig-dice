@@ -21,4 +21,9 @@ function activePlayer(){
     $("secondPlayer").children().prop("disabled",false);
     $(".secondPlayer").removeClass("disableGamingField");
   }
+};
+//function that dictates what is to happen when the dice is rolled
+
+Player.prototype.roll= function(){
+  
 }
