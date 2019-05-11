@@ -92,4 +92,8 @@ $("#formFields").submit(function(event){
 
   player1 = new Player(user1);
   player2 = new Player(user2);
-})
+
+  $(".nameofplayer1Output").text(player1.name);
+  $(".nameofplayer2Output").text(player2.name);
+  resetFields();
+});
