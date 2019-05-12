@@ -12,25 +12,15 @@
 <body>
   <div class="trial">
     <div class="crazy">
-
       <h1>PIG DICE</h1>
-
-
       <h2>Let us have some fun!</h2>
-
       <p class="playButton">PLAY NOW</p>
       <a href="instructions.html">
         <p class="rules">RULES</p>
       </a>
-
-
     </div>
-
   </div>
-
-
   <div class="playGame">
-
     <h3 class="startNewGame">Start a new Game</h3>
     <form id="formFields" class="forms" action=" " method="post">
       <div class="form-group">
@@ -44,41 +34,34 @@
       <div class="text-right">
         <button id="playButton" type="submit" name="button">Start</button>
       </div>
-
     </form>
   </div>
-
   <div class="playingSection" id="try">
     <a href="index.html">
       <h2 class="back">New Game</h2>
     </a>
-
-    <div class="firstPlayer">
-      <h4 class="nameofplayer1Output"></h4>
-      <img src="images/iconplayer1.jpg" alt="Image Icon for first player">
-      <p>Dice roll:<span class="diceRoll1"></span></p>
-      <p>Turn score:<span class="turnScore1"></span></p>
-      <p>Total score: <span class="totalScore1"></span></p>
-      <button type="button" name="button" class="user1roll">Roll</button>
-      <button type="button" name="button" class="user1hold">Hold</button>
+    <div class="frustrated">
+      <div class="firstPlayer">
+        <h4 class="nameofplayer1Output"></h4>
+        <img src="images/iconplayer1.jpg" alt="Image Icon for first player">
+        <p>Dice roll:<span class="diceRoll1"></span></p>
+        <p>Turn score:<span class="turnScore1"></span></p>
+        <p>Total score: <span class="totalScore1"></span></p>
+        <button type="button" name="button" class="user1roll">Roll</button>
+        <button type="button" name="button" class="user1hold">Hold</button>
+      </div>
+      <div class="secondPlayer">
+        <h4 class="nameofplayer2Output"></h4>
+        <img src="images/iconplayer2.jpg" alt="Image Icon for second player">
+        <p>Dice roll: <span class="diceRoll2"></span></p>
+        <p>Turn score: <span class="turnScore2"></span></p>
+        <p>Total score: <span class="totalScore2"></span></p>
+        <button type="button" name="button" class="user2roll">Roll</button>
+        <button type="button" name="button" class="user2hold">Hold</button>
+      </div>
     </div>
 
-
-    <div class="secondPlayer">
-      <h4 class="nameofplayer2Output"></h4>
-      <img src="images/iconplayer2.jpg" alt="Image Icon for second player">
-      <p>Dice roll: <span class="diceRoll2"></span></p>
-      <p>Turn score: <span class="turnScore2"></span></p>
-      <p>Total score: <span class="totalScore2"></span></p>
-      <button type="button" name="button" class="user2roll">Roll</button>
-      <button type="button" name="button" class="user2hold">Hold</button>
-
-    </div>
   </div>
-  <div class="overlay">
-
-  </div>
-
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
 </body>
