@@ -86,6 +86,7 @@ $(".user2hold").click(function (event) {
     $(".diceRoll2").text(player2.diceRoll);
     $(".turnScore2").text(player2.turnScore);
 });
+
  var player1, player2;
 
  //Back-End Logic
@@ -106,8 +107,8 @@ function activePlayer(){
     } else {
         $(".firstPlayer").children().prop("disabled",true);
         $(".firstPlayer").addClass("disableGamingField");
-        $("secondPlayer").children().prop("disabled",false);
-        $("secondPlayer").removeClass("disableGamingField");
+        $(".secondPlayer").children().prop("disabled",false);
+        $(".secondPlayer").removeClass("disableGamingField");
     }
 };
 Player.prototype.roll = function () {
@@ -178,5 +179,4 @@ function resetFields() {
     outputs.forEach(function (output) {
         output.text(0);
     })
-
 };
