@@ -14,6 +14,7 @@ event.preventDefault();
     $(".playingSection").show();
     $(".trial").hide();
     $(".forms").hide();
+    $(".playGame").hide();
   });
 
   $(".startNewGame").click(function(){
