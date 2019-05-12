@@ -10,10 +10,14 @@
 
 <body>
   <div class="trial">
-    <h1>Pig Dice</h1>
-    <h2>Let us have some fun!</h2>
-    <img src="http://www.animatedimages.org/data/media/710/animated-dice-image-0079.gif" alt="animated-dice-image-0095" />
-    <p class="playButton">Play now</p>
+    <div class="crazy">
+      <h1>Pig Dice</h1>
+      <h2>Let us have some fun!</h2>
+      <!-- <img src="http://www.animatedimages.org/data/media/710/animated-dice-image-0079.gif" alt="animated-dice-image-0095" /> -->
+      <img src="" alt="">
+      <p class="playButton">Play now</p>
+    </div>
+
   </div>
 
 
@@ -22,9 +26,9 @@
     <h3 class="startNewGame">Start a new Game</h3>
     <form id="formFields" class="forms" action=" " method="post">
       <label for="player1">First player</label>
-      <input type="text" id="nameplayer1" name="" value="" placeholder="Enter first player's name">
+      <input type="text" required id="nameplayer1" name="" value="" placeholder="Enter first player's name">
       <label for="player2">Second player</label>
-      <input type="text" id="nameplayer2" name="" value="" placeholder="Enter second player's name">
+      <input type="text" required id="nameplayer2" name="" value="" placeholder="Enter second player's name">
       <button id="playButton" type="submit" name="button">Start</button>
     </form>
   </div>
